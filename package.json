@@ -1,16 +1,16 @@
 {
-  "name": "assignment-2",
+  "name": "assignment-4",
   "version": "1.0.0",
+  "description": "WEB322 Assignment 4 – EJS & Tailwind setup",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css",
+    "dev": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css --watch",
     "start": "node server.js",
-    "tw:build": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "akadariya <akadariya@myseneca.ca>",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^5.1.0",
     "ejs": "^3.1.9"
